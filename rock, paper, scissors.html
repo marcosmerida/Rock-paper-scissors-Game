@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Rock, Paper, Scissors Game</title>
+        <link rel="stylesheet" href="/js/ppt/style.css">
+    </head>
+
+    <body>
+
+
+        <header align="center">
+            <h1>Rock, paper, scissors</h1>
+        </header>
+        <div class="gamewrapper">
+        <div class="marcador">
+            <div class="user-label badge">User</div>
+            <div class="comp-label badge">PC</div>
+            <span id="user-score">0</span> :
+            <span id="comp-score">0</span>
+        </div>
+
+        <div class="result">
+            <p>Let's play!</p>
+        </div>
+
+        <div class="options">
+            <div class="choice" id="rock">
+                <img src="/js/ppt/roca.png" height="100px">
+            </div>
+            <div class="choice" id="paper">
+                <img src="/js/ppt/papel.png" height="100px">
+            </div>
+            <div class="choice" id="scissors">
+                <img src="/js/ppt/tijeras.png" height="100px">
+            </div>
+        </div>
+
+        <div class="finalresult">
+        <p id="action">Good luck human 🤖</p>
+        </div>
+
+        <input type="button" value="Play again" class="playagain" onclick="reset()" id="playagain">
+
+    </div>
+        <script type="text/javascript" src="rps.js"></script>
+    </body> 
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #212121;
+}
+header{
+    background: #E64A19;
+    padding: 10px;
+    color: #EEEEEE;
+    font-family: 'Potta One', cursive;
+}
+header>h1{
+    font-size: 35px;
+}
+
+.gamewrapper{
+    border: 3px solid #F7F7F7;
+    background-image: url(/js/ppt/wallpaper.jpg);
+    margin: 20px auto;
+    width: 900px;
+    height: 600px;
+    border-style: outset;
+    font-size: 20px;
+    font-weight: 150;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 20px;
+    position:relative;
+}
+
+.marcador{
+    border: 3px solid #F7F7F7;
+    border-style:inherit;
+    margin: 20px auto;
+    width: 400px;
+    color: #F7F7F7;
+    font-size: 30px;
+    font-weight: 150;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 20px;
+    position:relative;
+}
+.badge{
+    background:#E64A19;
+    font-size: 15px;
+    border: 2px solid #F7F7F7;
+    border-radius: 10px;
+    padding: 0px 3px;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+.user-label{
+    position:absolute;
+    top:15px;
+    left: 10px;
+    height: 45%;
+    width: 30%;
+}
+.comp-label{
+    position:absolute;
+    top:15px;
+    right: 10px;
+    height: 45%;
+    width: 30%;
+}
+#user-score, #comp-score{
+    padding: 1px;
+    font-size: 35px;
+}
+
+.result{
+    font-size: 30px;
+    color:#F7F7F7;
+}
+.result>p{
+    text-align: center;
+    font-family: 'Potta One', cursive;
+}
+.options{
+    text-align: center;
+    margin: 50px 0px;
+}
+.choice{
+    display: inline-block;
+    border: 4px solid #F7F7F7;
+    border-style: dashed; 
+    border-radius: 50%;
+    background:none;
+    pointer-events: auto;
+    padding: 15px;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+.choice:hover{
+    background:#E64A19;
+    cursor: pointer;
+}
+#action{
+    text-align: center;
+    font-family: 'Potta One', cursive;
+    font-size: 25px;
+
+}
+
+.playagain{
+    border: 3px solid #F7F7F7;
+    background: black;
+    margin: 30px auto;
+    width: 200px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 150;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 20px;
+    position:relative;
+    transition: all 0.3s ease;
+}
+.playagain:hover{
+    background:#E64A19;
+    cursor: pointer;
+}
